@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 struct book
 {
 	char code[20];
@@ -65,13 +66,13 @@ void insert_details()
 {
 	FILE *fp;
 	struct book b;
-	printf("Enetr movie code :- ");	
+	printf("Enter movie code :- ");	
 	scanf("%s",b.code);
-	printf("Enetr  name :- ");	
+	printf("Enter  name :- ");	
 	scanf("%s",b.name);
-	printf("Enetr Relice Date:- ");	
+	printf("Enter Relice Date:- ");	
 	scanf("%s",b.date);
-	printf("Enetr Ticket Price:- ");	
+	printf("Enter Ticket Price:- ");	
 	scanf("%d",&b.cost);
 	fp=fopen("data.txt","a");
 	if(fp == NULL)
